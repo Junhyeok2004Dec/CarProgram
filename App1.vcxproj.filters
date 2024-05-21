@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="CarData.h" />
     <ClInclude Include="Packet.h" />
   </ItemGroup>
   <ItemGroup>

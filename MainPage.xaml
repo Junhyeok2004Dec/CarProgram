@@ -15,6 +15,7 @@
                 Height="174" VerticalAlignment="Top" >
             <Button Content="Button" Height="164" VerticalAlignment="Top" Width="317"/>
         </Border>
+        <TextBox TextWrapping="Wrap" Text="0031 2491 0409 48ff 3fb0 123a 007f" TextChanged="TextBox_TextChanged" Margin="0,174,0,714" PlaceholderText="" InputScope="Text" FontFamily="BatangChe"/>
 
     </Grid>
 </Page>
