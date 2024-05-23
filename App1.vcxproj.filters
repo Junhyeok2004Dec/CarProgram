@@ -8,20 +8,30 @@
       <UniqueIdentifier>e02d0ae8-29e3-4d00-9062-32543dda5a62</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ApplicationDefinition Include="App.xaml" />
+    <Filter Include="SerialData">
+      <UniqueIdentifier>{f56bb604-fec8-454c-b71c-b81d9062df5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUIapplication">
+      <UniqueIdentifier>{54e1fece-13e9-4c06-a3f6-7b4fbaf871cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Packet.cpp" />
-    <ClCompile Include="Serial.cpp" />
+    <ClCompile Include="Serial.cpp">
+      <Filter>SerialData</Filter>
+    </ClCompile>
+    <ClCompile Include="PortSerialRead.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="CarData.h" />
     <ClInclude Include="Packet.h" />
-    <ClInclude Include="SerialClass.h" />
+    <ClInclude Include="SerialClass.h">
+      <Filter>SerialData</Filter>
+    </ClInclude>
+    <ClInclude Include="CarData.h">
+      <Filter>SerialData</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
@@ -50,6 +60,16 @@
     <AppxManifest Include="Package.appxmanifest" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MainPage.xaml" />
+    <ApplicationDefinition Include="App.xaml">
+      <Filter>GUIapplication</Filter>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml">
+      <Filter>GUIapplication</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packetList.cpp" />
   </ItemGroup>
 </Project>
