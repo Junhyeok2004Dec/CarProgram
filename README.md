@@ -1,4 +1,4 @@
-# Centre-Controll System
+# Centre-Control System
 
 # Using custom packet 
 
