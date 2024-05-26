@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="App1.MainPage1"
+    x:Class="App1.CarManagement"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:App1"
@@ -26,7 +26,7 @@
             <Path x:Name="GaugeArc" Stroke="Black" StrokeThickness="5" Fill="Transparent"/>
             <Line x:Name="GaugeNeedle" Stroke="Red" StrokeThickness="2" X1="150" Y1="150" />
         </Canvas>
-        
-        
+
+
     </Grid>
 </Page>

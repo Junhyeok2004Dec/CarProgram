@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include "CarManagement.xaml.h"
 
 using namespace App1;
 
@@ -30,4 +31,11 @@ MainPage::MainPage()
 void App1::MainPage::TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e)
 {
 
+}
+
+void App1::MainPage::OnClicked(Object^ sender, RoutedEventArgs^ e)
+{
+    auto carManagementWindow = ref new CarManagement();
+    Windows::UI::Xaml::Window::Current->Content = carManagementWindow;
+    Windows::UI::Xaml::Window::Current->Activate();
 }
