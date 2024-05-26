@@ -168,6 +168,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CarData.h" />
+    <ClInclude Include="gps.h" />
+    <ClInclude Include="node.h" />
     <ClInclude Include="Packet.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
@@ -183,6 +185,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="henes_control.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -219,7 +224,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PortSerialRead.cpp" />
+    <ClCompile Include="PositionNode.cpp" />
     <ClCompile Include="Serial.cpp" />
+    <ClCompile Include="site.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packetList.cpp" />
