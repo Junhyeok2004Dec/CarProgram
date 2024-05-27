@@ -20,5 +20,13 @@
         <TextBlock HorizontalAlignment="Left" Margin="982,190,0,0" TextWrapping="Wrap" Text="제 3 학생생활관" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="982,269,0,0" TextWrapping="Wrap" Text="11.2 km/h" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
 
+
+        <Slider x:Name="ValueSlider" Minimum="-20" Maximum="20" ValueChanged="OnSliderValueChanged" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <Canvas x:Name="GaugeCanvas" Width="300" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Path x:Name="GaugeArc" Stroke="Black" StrokeThickness="5" Fill="Transparent"/>
+            <Line x:Name="GaugeNeedle" Stroke="Red" StrokeThickness="2" X1="150" Y1="150" />
+        </Canvas>
+        
+        
     </Grid>
 </Page>

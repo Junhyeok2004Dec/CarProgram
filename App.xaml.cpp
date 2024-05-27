@@ -33,12 +33,9 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 {
     auto rootFrame = dynamic_cast<Frame^>(Window::Current->Content);
 
-    // 창에 콘텐츠가 이미 있는 경우 앱 초기화를 반복하지 말고,
-    // 창이 활성화되어 있는지 확인하십시오.
+
     if (rootFrame == nullptr)
     {
-        // 탐색 상황에 맞게 사용되는 프레임을 만들어 이를
-        // SuspensionManager 키에 연결합니다.
         rootFrame = ref new Frame();
 
         rootFrame->NavigationFailed += ref new Windows::UI::Xaml::Navigation::NavigationFailedEventHandler(this, &App::OnNavigationFailed);
@@ -56,7 +53,6 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
             }
             // 현재 창에 프레임 넣기
             Window::Current->Content = rootFrame;
-            // 현재 창이 활성 창인지 확인
             Window::Current->Activate();
         }
     }

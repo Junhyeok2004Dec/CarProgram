@@ -1,36 +1,27 @@
 #include "pch.h"
-#include "CarManagement.xaml.h"
+#include "henes_control.xaml.h"
 
-#define M_PI 3.141592f
-
-using namespace App1;
-
+using namespace GaugeApp;
 using namespace Platform;
-using namespace Windows::Foundation;
-using namespace Windows::Foundation::Collections;
 using namespace Windows::UI::Xaml;
 using namespace Windows::UI::Xaml::Controls;
-using namespace Windows::UI::Xaml::Controls::Primitives;
-using namespace Windows::UI::Xaml::Data;
 using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
-using namespace Windows::UI::Xaml::Navigation;
+using namespace Windows::UI::Xaml::Shapes;
 
-
-CarManagement::CarManagement()
+MainPage::MainPage()
 {
     InitializeComponent();
-
-	DrawGaugeArc();
-
+    DrawGaugeArc();
 }
 
-void CarManagement::OnSliderValueChanged(Object^ sender, RangeBaseValueChangedEventArgs^ e)
+void MainPage::OnSliderValueChanged(Object^ sender, RangeBaseValueChangedEventArgs^ e)
 {
-	UpdateGaugeNeedle(e->NewValue);
-} // 슬라이더 변경 event
+    UpdateGaugeNeedle(e->NewValue);
+}
 
-void CarManagement::DrawGaugeArc() {
+void MainPage::DrawGaugeArc()
+{
     double startAngle = -180;
     double endAngle = 0;
     double radius = 150;
@@ -60,10 +51,8 @@ void CarManagement::DrawGaugeArc() {
     GaugeArc->Data = pathGeometry;
 }
 
-
-void CarManagement::UpdateGaugeNeedle(double value)
+void MainPage::UpdateGaugeNeedle(double value)
 {
-
     double angle = (value + 20) * 180 / 40 - 180; // value to angle
     double radius = 100;
 
@@ -75,5 +64,4 @@ void CarManagement::UpdateGaugeNeedle(double value)
 
     GaugeNeedle->X2 = needleX;
     GaugeNeedle->Y2 = needleY;
-
 }

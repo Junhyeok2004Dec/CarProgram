@@ -4,6 +4,7 @@
 #include "MainPage.xaml.h"
 #include "BlankPage.xaml.h"
 
+
 using namespace App1;
 
 using namespace Platform;
@@ -38,7 +39,3 @@ void App1::MainPage::OnClicked(Object^ sender, RoutedEventArgs^ e)
     Windows::UI::Xaml::Window::Current->Activate();
 }
 
-void App1::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-
-}
