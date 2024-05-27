@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>ab289015-7bba-4eca-af30-c0cca509e387</UniqueIdentifier>
+    </Filter>
     <Filter Include="Assets">
       <UniqueIdentifier>e02d0ae8-29e3-4d00-9062-32543dda5a62</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
@@ -10,9 +13,6 @@
     </Filter>
     <Filter Include="GUIapplication">
       <UniqueIdentifier>{54e1fece-13e9-4c06-a3f6-7b4fbaf871cf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GUIapplication\Common">
-      <UniqueIdentifier>ab289015-7bba-4eca-af30-c0cca509e387</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +76,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packetList.cpp" />
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
