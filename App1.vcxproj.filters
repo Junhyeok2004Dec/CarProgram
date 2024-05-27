@@ -72,6 +72,7 @@
     <Page Include="MainPage.xaml">
       <Filter>GUIapplication</Filter>
     </Page>
+    <Page Include="BlankPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packetList.cpp" />

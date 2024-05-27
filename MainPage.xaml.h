@@ -19,5 +19,8 @@ namespace App1
 
 	private:
 		void TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e);
+		void OnClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+
+		void Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }
