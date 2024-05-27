@@ -72,9 +72,6 @@
     <Page Include="MainPage.xaml">
       <Filter>GUIapplication</Filter>
     </Page>
-    <Page Include="henes_control.xaml">
-      <Filter>GUIapplication</Filter>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="packetList.cpp" />
