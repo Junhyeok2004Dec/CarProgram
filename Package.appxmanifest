@@ -7,9 +7,9 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="ed8e436d-abb7-4c54-8fe8-8f1b1939d45a"
+    Name="CarControlProgram"
     Publisher="CN=user"
-    Version="1.0.0.0" />
+    Version="0.1.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="ed8e436d-abb7-4c54-8fe8-8f1b1939d45a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

@@ -199,9 +199,6 @@
       <DependentUpon>BlankPage.xaml</DependentUpon>
     </ClInclude>
     <ClInclude Include="CarData.h" />
-    <ClInclude Include="CarManagement.xaml.h">
-      <DependentUpon>CarManagement.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="gps.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="Packet.h" />
