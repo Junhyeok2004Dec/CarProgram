@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="App1.BlankPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Ellipse
+    Fill="Blue"
+    Canvas.Left="10"
+    Canvas.Top="25" Margin="90,126,1251,715" />
+        <TextBlock HorizontalAlignment="Left" Margin="97,65,0,0" TextWrapping="Wrap" Text="비상정지" VerticalAlignment="Top" FontFamily="BatangChe" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="982,109,0,0" TextWrapping="Wrap" Text="비상제동 체결" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="982,26,0,0" TextWrapping="Wrap" Text="차량정지" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="982,190,0,0" TextWrapping="Wrap" Text="제 3 학생생활관" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="982,269,0,0" TextWrapping="Wrap" Text="11.2 km/h" VerticalAlignment="Top" Height="62" Width="457" FontSize="48" FontFamily="BatangChe" TextAlignment="Center"/>
+
+
+        <Slider x:Name="ValueSlider" Minimum="-20" Maximum="20" ValueChanged="OnSliderValueChanged" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <Canvas x:Name="GaugeCanvas" Width="300" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Path x:Name="GaugeArc" Stroke="Black" StrokeThickness="5" Fill="Transparent"/>
+            <Line x:Name="GaugeNeedle" Stroke="Red" StrokeThickness="2" X1="150" Y1="150" />
+        </Canvas>
+
+
+    </Grid>
+</Page>

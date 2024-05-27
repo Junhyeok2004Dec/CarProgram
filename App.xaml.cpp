@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include "BlankPage.xaml.h"
 
 using namespace App1;
 
@@ -74,17 +75,11 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 void App::OnSuspending(Object^ sender, SuspendingEventArgs^ e)
 {
-    (void) sender;  // 사용하지 않는 매개 변수
-    (void) e;   // 사용하지 않는 매개 변수
+    (void) sender; 
+    (void) e;   
 
-    //TODO: 애플리케이션 상태를 저장하고 백그라운드 작업을 모두 중지합니다.
 }
 
-/// <summary>
-/// 특정 페이지 탐색에 실패한 경우 호출됨
-/// </summary>
-/// <param name="sender">탐색에 실패한 프레임</param>
-/// <param name="e">탐색 실패에 대한 정보</param>
 void App::OnNavigationFailed(Platform::Object ^sender, Windows::UI::Xaml::Navigation::NavigationFailedEventArgs ^e)
 {
     throw ref new FailureException("Failed to load Page " + e->SourcePageType.Name);

@@ -1,11 +1,9 @@
-﻿//
-// MainPage.xaml.cpp
-// MainPage 클래스의 구현입니다.
-//
+﻿
 
 #include "pch.h"
 #include "MainPage.xaml.h"
-#include "CarManagement.xaml.h"
+#include "BlankPage.xaml.h"
+
 
 using namespace App1;
 
@@ -20,11 +18,12 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-// 빈 페이지 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x412에 나와 있습니다.
 
 MainPage::MainPage()
 {
 	InitializeComponent();
+	
+
 }
 
 
@@ -35,7 +34,8 @@ void App1::MainPage::TextBox_TextChanged(Platform::Object^ sender, Windows::UI::
 
 void App1::MainPage::OnClicked(Object^ sender, RoutedEventArgs^ e)
 {
-    auto carManagementWindow = ref new CarManagement();
+    auto carManagementWindow = ref new BlankPage();
     Windows::UI::Xaml::Window::Current->Content = carManagementWindow;
     Windows::UI::Xaml::Window::Current->Activate();
 }
+

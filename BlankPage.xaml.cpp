@@ -1,6 +1,10 @@
-#include "pch.h"
-#include "CarManagement.xaml.h"
+﻿//
+// BlankPage.xaml.cpp
+// BlankPage 클래스의 구현
+//
 
+#include "pch.h"
+#include "BlankPage.xaml.h"
 #define M_PI 3.141592f
 
 using namespace App1;
@@ -17,20 +21,22 @@ using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
 
-CarManagement::CarManagement()
+BlankPage::BlankPage()
 {
-    InitializeComponent();
+	InitializeComponent();
+    DrawGaugeArc();
 
-	DrawGaugeArc();
+
+
 
 }
 
-void CarManagement::OnSliderValueChanged(Object^ sender, RangeBaseValueChangedEventArgs^ e)
+void BlankPage::OnSliderValueChanged(Object^ sender, RangeBaseValueChangedEventArgs^ e)
 {
-	UpdateGaugeNeedle(e->NewValue);
-} // 슬라이더 변경 event
+    UpdateGaugeNeedle(e->NewValue);
+}
 
-void CarManagement::DrawGaugeArc() {
+void BlankPage::DrawGaugeArc() {
     double startAngle = -180;
     double endAngle = 0;
     double radius = 150;
@@ -61,7 +67,7 @@ void CarManagement::DrawGaugeArc() {
 }
 
 
-void CarManagement::UpdateGaugeNeedle(double value)
+void BlankPage::UpdateGaugeNeedle(double value)
 {
 
     double angle = (value + 20) * 180 / 40 - 180; // value to angle
