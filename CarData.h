@@ -22,7 +22,11 @@ private:
 
 public:
 	
-	
+	int getID();
+	int getBATTERY(); // 소수점 절삭을 위해 84.4%이면 844로 표시
+	float wheel_velocity();
+	std::vector<float> getVelocityGPS();
+	std::vector<int> getUTM_POS;
 
 	
 };
